@@ -1,0 +1,19 @@
+# Tax Command — Python dependencies
+# Core (required)
+pandas>=2.0.0
+streamlit>=1.30.0
+
+# Orchestration (optional — falls back to run_sequential() if not installed)
+langgraph>=0.1.0
+langchain-core>=0.2.0
+
+# ML layer (optional — needed for ETR forecasting, VAT classification)
+scikit-learn>=1.3.0
+xgboost>=2.0.0
+prophet>=1.1.0      # ETR time-series forecasting
+
+# RAG layer (optional — needed for TP advisory comparable retrieval)
+chromadb>=0.4.0
+
+# LLM client (optional — needed for TP advisory generation, Gen AI commentary)
+anthropic>=0.25.0
